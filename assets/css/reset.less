@@ -1,0 +1,59 @@
+/* RESET.less
+    
+	index -> 	
+				reset
+				custom resets
+				self clearing
+				multiple classes
+				
+*/
+				
+/* =reset
+--------------------- */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, code,
+del, dfn, em, img, q, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+margin: 0;
+padding: 0;
+border: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: inherit;
+vertical-align: baseline;
+}
+
+body { line-height: 1.5; background: #fff; margin: 0; }
+table { border-collapse: separate; border-spacing: 0; }
+caption, th, td { text-align: left; font-weight: bold; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+
+
+/* =custom resets
+----------------- */
+a img { border: none; }
+table { border-collapse: collapse; }
+
+
+/* =self clearing
+----------------- */
+.clear:after {
+content: "."; 
+display: block; 
+height: 0; 
+clear: both;
+visibility: hidden;
+}
+.clear { display: inline-block; }
+
+
+/* =multiple classes
+-------------------- */
+.m-bor { border: none !important; }
+.m-pad { padding: 0 !important; }
+.m-mar { margin: 0 !important; }
+.m-fin { border: none !important; background: none !important; }
