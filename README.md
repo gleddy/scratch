@@ -6,4 +6,4 @@ TODO
 * layout, implement LESS.js
 * work on default phone/tablet/+ media query
 * test layout.less (is everything pulling in?)
-* simple polyfill to enable HTML5 for all browsers
+* <del>simple polyfill to enable HTML5 for all browsers</del>

@@ -12,15 +12,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- CSS -->
-<link rel="stylesheet" media="screen, projection" type="text/css" href="assets/css/layout.less" />
-<!-- <link rel="stylesheet" media="print" type="text/css" href="assets/css/print.css" /> -->
-
-<!--[if IE 7]>
-	<link rel="stylesheet" media="screen, projection" type="text/css" href="assets/css/ie7.css" />
-<![endif]-->
-<!--[if IE 8]>
-	<link rel="stylesheet" media="screen, projection" type="text/css" href="assets/css/ie8.css" />
-<![endif]-->
+<link rel="stylesheet/less" type="text/css" href="assets/css/layout.less">
+<!--[if IE 7]><link rel="stylesheet" media="screen, projection" type="text/css" href="assets/css/ie7.css" /><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" media="screen, projection" type="text/css" href="assets/css/ie8.css" /><![endif]-->
+<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
 <!-- favicons -->
 <link rel="shortcut icon" href="assets/img/favicon.ico">
@@ -29,15 +24,24 @@
 <!-- JS (most above </body>) -->
 <script src="assets/js/less.js"></script>
 
+<script>
+// ****** remove this before deploying to production !!
+less.env = 'development';
+less.watch();
+</script>
+
 </head>
 
 <body>
 
-<div id="wrap">
+<header>
 	<h1>Scratch</h1>
-	<p>This is the Scratch template to get you moving quickly on your next project</p>
+	<h2>A simple template to start HTML5 projects</h2>
+</header>
 
-</div><!-- // wrap -->
+<footer>
+	This is the footer.
+</footer>
 
 <!-- JS -->
 <script type="text/javascript" src="assets/js/jquery-1.6.2.min.js"></script>
