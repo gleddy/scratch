@@ -4,12 +4,11 @@
 <meta charset="utf-8">
 	
 <title>Scratch</title>
-<meta name="description" content=" " />
-<meta name="keywords" content=" " />
+<meta name="description" content="" />
 <meta name="apple-mobile-web-app-capable" content="yes">
 
 <!-- mobile  -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
 <!-- CSS -->
 <link rel="stylesheet/less" type="text/css" href="assets/css/layout.less">
@@ -25,7 +24,7 @@
 <script src="assets/js/less.js"></script>
 
 <script>
-// ****** remove this before deploying to production !!
+// ****** LESS.js development - remove this before deploying to production !!
 less.env = 'development';
 less.watch();
 </script>
@@ -34,12 +33,20 @@ less.watch();
 
 <body>
 
-<header>
-	<h1>Scratch</h1>
-	<h2>A simple template to start HTML5 projects</h2>
+<header role="banner">
+	<hgroup>
+		<h1>Scratch</h1>
+		<h2>A simple template to start HTML5 projects</h2>
+	</hgroup>
 </header>
 
-<footer>
+<section role="main">
+	<p>Probably every internet user saw “lorem ipsum” template page at least once.a long text paragraph used to show design of the selected template. but did you ever think about origin of this long, pseudo-latin text? lipsum.com is the answer for all your questions.</p>
+	<p>Ever wonder where that "stand in" text comes from on html templates? this is a great way to help you with layout and simulated content when designing sites. This is the piece of text i'm using for dummy text while deisgning instead of the usual "lorem ipsum dolor sit amet blah blah blah.".</p>
+	<p>If you're not feeling those faux latin phrases, we've got 10 alternatives that are guaranteed to boost the fun factor on your place holding text.</p> 
+</section>
+
+<footer role="contentinfo">
 	This is the footer.
 </footer>
 
